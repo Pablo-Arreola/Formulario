@@ -1,73 +1,117 @@
-# React + TypeScript + Vite
+# 📘 Proyecto Formulario – Desarrollo Web (UMG)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+![Formulario React + Tailwind](https://formulario-alpha-one.vercel.app/form-preview.png)
 
-Currently, two official plugins are available:
+Este proyecto fue desarrollado como parte del curso **Desarrollo Web (036)** de la **Universidad Mariano Gálvez de Guatemala**, bajo la guía del **Ing. Carmelo Mayén**.  
+Su propósito es aplicar los conocimientos de **React**, **Vite** y **Tailwind CSS v4** para crear un **formulario moderno, responsivo y visualmente atractivo**, desplegado en **Vercel**.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## React Compiler
+## 🌐 Enlaces del proyecto
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+📁 **Repositorio en GitHub:**  
+[https://github.com/Pablo-Arreola/Formulario](https://github.com/Pablo-Arreola/Formulario)
 
-## Expanding the ESLint configuration
+🚀 **Demo en Vercel:**  
+[https://formulario-alpha-one.vercel.app/](https://formulario-alpha-one.vercel.app/)
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+---
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+## 🚀 Tecnologías utilizadas
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+- ⚛️ **React 19**
+- ⚙️ **Vite 7**
+- 🎨 **Tailwind CSS v4**
+- 💅 **PostCSS + @tailwindcss/postcss**
+- 💻 **TypeScript**
+- ☁️ **Vercel (Deploy)**
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+---
+
+## 📦 Instalación y ejecución local
+
+1️⃣ Clona este repositorio:
+```bash
+git clone https://github.com/Pablo-Arreola/Formulario.git
+cd Formulario
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
-
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+2️⃣ Instala las dependencias:
+```bash
+npm install
 ```
+
+3️⃣ Ejecuta en modo desarrollo:
+```bash
+npm run dev
+```
+
+Luego abre [http://localhost:5173](http://localhost:5173) para ver el proyecto.
+
+---
+
+## 🧠 Estructura del proyecto
+
+```
+Formulario/
+├── public/
+│   └── form-preview.png        # Imagen de portada para el README
+├── src/
+│   ├── App.tsx
+│   ├── Formulario.tsx
+│   ├── index.css
+│   ├── main.tsx
+├── tailwind.config.js
+├── postcss.config.js
+├── package.json
+├── vite.config.ts
+└── tsconfig.json
+```
+
+---
+
+## 🎨 Características principales
+
+✅ Fondo degradado azul-violeta con `backdrop-blur`  
+✅ Formulario centrado con sombra y bordes redondeados  
+✅ Inputs modernos con efecto `focus` y `hover`  
+✅ Totalmente responsivo  
+✅ Compatible con **Vercel Deploy**
+
+---
+
+## 📂 Scripts útiles
+
+| Script | Descripción |
+|--------|--------------|
+| `npm run dev` | Ejecuta el entorno de desarrollo |
+| `npm run build` | Compila para producción |
+| `npm run preview` | Muestra la versión compilada localmente |
+
+---
+
+## 📸 Vista previa
+
+![Vista del formulario](https://formulario-alpha-one.vercel.app/form-preview.png)
+
+---
+
+## ✨ Autor
+
+👨‍💻 **Pablo Raúl Arreola Contreras**  
+🎓 **Universidad Mariano Gálvez de Guatemala**  
+🪪 **Carnet:** 1790-21-18516  
+📘 **Curso:** Desarrollo Web (036)  
+👨‍🏫 **Docente:** Ing. Carmelo Mayén  
+📅 **Año:** 2025  
+
+---
+
+## 🧾 Licencia
+
+Proyecto educativo desarrollado con fines académicos.  
+Libre para uso personal y aprendizaje.
+
+---
+
+> 💙 Desarrollado con pasión, React y Tailwind CSS.
